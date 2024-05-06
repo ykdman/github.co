@@ -17,7 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(to bottom right, #666666, #999999);
+  /* background: linear-gradient(to bottom right, #666666, #999999); */
+  background-color: #666666;
   height: 100vh;
 }
 
