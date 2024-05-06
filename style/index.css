@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+
+img {
+  width: 24rem;
+  height: 24rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #666666, #999999);
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+#top {
+  margin: 1.5rem;
+  padding: 4px;
+}
+
+#description {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#projects .card {
+  height: 48rem;
+  margin: 1rem;
+  padding: 1rem;
+  padding-top: 0;
+  background-color: #eef7ff;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: bottom 0.3s ease;
+}
+
+#projects .card:hover {
+  transform: translateY(-1rem);
+  transition: transform 0.3s ease-in-out;
+}
+
+#projects .card:not(:hover) {
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+#projects .card .card_title {
+  border-top: 1px solid #666666;
+  width: 100%;
+  text-align: center;
+}
+
+#projects .card .card_description {
+  word-wrap: break-word;
+}
+
+#projects .card .card_button {
+  outline: none;
+  background-color: #0a6847;
+  border: none;
+  padding: 4px;
+  width: 10rem;
+  border-radius: 1rem;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#projects .card .card_button:hover {
+  background-color: #7aba78;
+}
+
+#skills {
+  width: 100%;
+  text-align: center;
+}
+
+#skills p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#skills img {
+  width: 4rem;
+  height: 2rem;
+}
